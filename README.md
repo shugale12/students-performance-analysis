@@ -86,6 +86,8 @@ Sample queries included:
  FROM 
     "view_students_performance";
 
+![Sample Output images](assets/images/Row_count.png)
+
   -- Column count
   SELECT 
     COUNT(*) AS column_count 

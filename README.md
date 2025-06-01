@@ -39,7 +39,7 @@ Includes:
 
 ## Power BI Features
 
-The Power BI report offers an interactive view of student performance, using filters, visuals, and key metrics.
+The Power BI report offers an interactive view of student performance, using slicer, visuals, and key metrics.
 
 ### 🔷 Left side Section – KPI Cards
 

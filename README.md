@@ -185,10 +185,10 @@ GROUP BY
 
 ## 📂 Project Files
 ├── 📊 Data set
- !(assets/docs/student_info.csv)
+ (student_performance_data.csv`)(assets/docs/student_info.csv)
 
 ├── 📈 Power BI Report (pbix)
-(assets/docs/students performance.pbix)
+(PowerBI_report)(assets/docs/students performance.pbix)
 
 
 

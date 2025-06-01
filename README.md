@@ -75,7 +75,7 @@ DIVIDE(
 )
 
 -- Student Performance Dashboard
-![Sample Output images](assets/images/dashboard_image.png.png)
+![Sample Output images](assets/images/dashboard_image.png)
 
 ---
 
@@ -191,10 +191,10 @@ GROUP BY
 
 ## 📂 Project Files
 ├── 📊 Data set
- ![Sample Output images](assets/docs/student_info.csv.png)
+ ![Sample Output images](assets/docs/student_info.csv)
 
 ├── 📈 Power BI Report (pbix)
- ![Sample Output images](assets/docs/students performance.pbix.png)
+ ![Sample Output images](assets/docs/students performance.pbix)
 
 
 

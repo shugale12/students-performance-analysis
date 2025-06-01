@@ -1,9 +1,3 @@
-# students_performance_analytics
-
-
-
-
-
 # 📊 Student Performance Data Analysis
 
 This project explores how different factors affect student academic performance using **Excel**, **Power BI**, and **SQL**.  

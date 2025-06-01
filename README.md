@@ -8,14 +8,14 @@ It focuses on analyzing scores, demographics, and study habits to uncover meanin
 
 ## 📚 Table of Contents
 
-1. [Tools Used](#-tools-used)  
-2. [Dataset Summary](#-dataset-summary)  
-3. [Power BI Features](#-power-bi-features)  
-4. [SQL Analysis](#-sql-analysis)  
-5. [Key Insights](#-key-insights)  
-6. [What I Learned](#-what-i-learned)  
-7. [Project Files](#-project-structure)  
-8. [Author Note](#-author-note)  
+1. [Tools Used](#tools-used)  
+2. [Dataset Summary](#dataset-summary)  
+3. [Power BI Features](#power-bi-features)  
+4. [SQL Analysis](#sql-analysis)  
+5. [Key Insights](#key-insights)  
+6. [What I Learned](#what-i-learned)  
+7. [Project Files](#project-structure)  
+8. [Author Note](#author-note)  
 
 
 ---

@@ -26,14 +26,14 @@ It focuses on analyzing scores, demographics, and study habits to uncover meanin
 
 ---
 
-## 🔧 Tools Used
+## Tools Used
 
 - **Power BI** – Interactive dashboards and slicers  
 - **SQL** – Data cleaning, Data querying and aggregation for deeper insights  
 
 ---
 
-## 📁 Dataset Summary
+## Dataset Summary
 
 Includes:
 - **Demographic Fields**: Gender, Parental Education, Lunch Type  
@@ -43,7 +43,7 @@ Includes:
 
 ---
 
-## 📈 Power BI Features
+## Power BI Features
 
 The Power BI report offers an interactive view of student performance, using filters, visuals, and key metrics.
 
@@ -58,7 +58,7 @@ These headline metrics provide a quick snapshot of student performance:
 | `AvgAttendance`     | AvgAttendance     (%)    |
 | `PassRate`          | Overall Pass Rate (%)    |
 
-#### 🛠 DAX Code Used
+#### DAX Code Used
 
 ```DAX
 -- Average Math Score
@@ -79,7 +79,7 @@ DIVIDE(
 
 ---
 
-## 🧮 SQL Analysis
+## SQL Analysis
 
 Sample queries included:
 
@@ -176,7 +176,7 @@ GROUP BY
 
 
 
-## 🔍 Key Insights
+## Key Insights
  - Female students score higher in reading and writing
  - Higher parental education is linked to better student performance
  - Students who completed test prep score higher on average

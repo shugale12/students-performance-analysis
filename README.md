@@ -1,8 +1,13 @@
+
+
+
+
+
+
 # 📊 Student Performance Data Analysis
 
 This project explores how different factors affect student academic performance using **Power BI**, and **SQL**.  
 It focuses on analyzing scores, demographics, and study habits to uncover meaningful patterns and insights.
-
 
 
 ---
@@ -15,7 +20,7 @@ It focuses on analyzing scores, demographics, and study habits to uncover meanin
 4. [SQL Analysis](#-sql-analysis)  
 5. [Key Insights](#-key-insights)  
 6. [What I Learned](#-what-i-learned)  
-7. [Project Structure](#-project-structure)  
+7. [Project Files](#-project-structure)  
 8. [Author Note](#-author-note)  
 
 
@@ -69,6 +74,8 @@ DIVIDE(
     COUNTROWS('view_students_performance')
 )
 
+-- Student Performance Dashboard
+![Sample Output images](assets/images/dashboard_image.png.png)
 
 ---
 
@@ -96,6 +103,8 @@ Sample queries included:
   WHERE 
     TABLE_NAME = 'view_students_performance';
 
+![Sample Output images](assets/images/column_count.png)
+
  -- Duplicate count
    SELECT 
      student_id,
@@ -107,11 +116,14 @@ Sample queries included:
    HAVING 
      COUNT(*) > 1;
 
+![Sample Output images](assets/images/Duplicate_count.png)
 
 -- Average score by gender
 SELECT gender, ROUND(AVG((math_score + reading_score + writing_score)/3), 2) AS avg_score
 FROM view_students_performance
 GROUP BY gender;
+
+![Sample Output images](assets/images/Average_Scores_by_Gender.png)
 
 -- Pass rate by parental education
 SELECT parent_education,
@@ -121,6 +133,8 @@ SELECT parent_education,
 FROM view_students_performance
 GROUP BY parent_education;
 
+![Sample Output images](assets/images/Parent_Education_vs_Average_Performance.png)
+
 -- Final Result Count by Grade Level
 SELECT grade_level,
        final_result,
@@ -129,12 +143,16 @@ FROM view_students_performance
 GROUP BY grade_level, final_result
 ORDER BY grade_level, final_result;
 
+![Sample Output images](assets/images/Final_Result_by_Grade Level.png)
+
 -- Top 10 Students by Average Score
 SELECT student_id, name,
        ROUND((CAST(math_score AS FLOAT) + CAST(reading_score AS FLOAT) + CAST(writing_score AS FLOAT)) / 3.0, 2) AS average_score
 FROM view_students_performance
 ORDER BY average_score DESC
 OFFSET 0 ROWS FETCH NEXT 10 ROWS ONLY;
+
+![Sample Output images](assets/images/Top_10_Students_by_Average_Score.png)
 
 -- Attendance Impact on Final Result
 SELECT 
@@ -154,7 +172,7 @@ GROUP BY
     END,
     final_result;
 
-
+![Sample Output images](assets/images/Attendance_Impact_on_Final_Result.png)
 
 
 
@@ -171,11 +189,13 @@ GROUP BY
  - How to write basic SQL queries to generate insights
  - How to connect insights across tools for one story
 
-## 📂 Project Structure
+## 📂 Project Files
 ├── 📊 Data set
-├── 📈 Power BI Report (.pbix)
-├── 🧾 SQL Queries
-└── 📑 Insight notes
+ ![Sample Output images](assets/docs/student_info.csv.png)
+
+├── 📈 Power BI Report (pbix)
+ ![Sample Output images](assets/docs/students performance.pbix.png)
+
 
 
 ## 📌 Author Note

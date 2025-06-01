@@ -191,10 +191,10 @@ GROUP BY
 
 ## 📂 Project Files
 ├── 📊 Data set
- ![Sample Output images](assets/docs/student_info.csv)
+ !(assets/docs/student_info.csv)
 
 ├── 📈 Power BI Report (pbix)
- ![Sample Output images](assets/docs/students performance.pbix)
+(assets/docs/students performance.pbix)
 
 
 

@@ -187,7 +187,7 @@ GROUP BY
 ├── 📊 Data set
  (student_performance_data.csv`)(assets/docs/student_info.csv)
 
-├── 📈 Power BI Report (pbix)
+├── 📈 Power BI Live Report (pbix)
 (PowerBI_report)(assets/docs/students performance.pbix)
 
 

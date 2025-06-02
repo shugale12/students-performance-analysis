@@ -41,7 +41,7 @@ Includes:
 
 The Power BI report offers an interactive view of student performance, using slicer, visuals, and key metrics.
 
-### 🔷 Left side Section – KPI Cards
+### Left side Section – KPI Cards
 
 At the left side of the dashboard, I created **Card visuals** aligned vertically to show key performance indicators (KPIs).  
 These headline metrics provide a quick snapshot of student performance:

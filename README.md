@@ -76,95 +76,35 @@ DIVIDE(
 ## SQL Analysis
 
 Sample queries included:
-
-```sql
-
--- Data cleaning/validation
-
- -- Row Count
- SELECT 
-    COUNT(*) AS no_of_rows 
- FROM 
-    "view_students_performance";
+ -- Role count
 
 ![Sample Output images](assets/images/Row_count.png)
 
   -- Column count
-  SELECT 
-    COUNT(*) AS column_count 
-  FROM 
-    INFORMATION_SCHEMA.COLUMNS 
-  WHERE 
-    TABLE_NAME = 'view_students_performance';
 
 ![Sample Output images](assets/images/column_count.png)
 
  -- Duplicate count
-   SELECT 
-     student_id,
-     COUNT(*) AS duplicate_count 
-   FROM 
-    "view_students_performance" 
-   GROUP BY 
-     student_id 
-   HAVING 
-     COUNT(*) > 1;
-
+   
 ![Sample Output images](assets/images/Duplicate_count.png)
 
 -- Average score by gender
-SELECT gender, ROUND(AVG((math_score + reading_score + writing_score)/3), 2) AS avg_score
-FROM view_students_performance
-GROUP BY gender;
 
 ![Sample Output images](assets/images/Average_Scores_by_Gender.png)
 
 -- Pass rate by parental education
-SELECT parent_education,
-       COUNT(CASE WHEN average_score >= 70 THEN 1 END) AS pass_count,
-       COUNT(*) AS total,
-       ROUND(COUNT(CASE WHEN average_score >= 70 THEN 1 END)*100.0/COUNT(*), 2) AS pass_rate
-FROM view_students_performance
-GROUP BY parent_education;
 
 ![Sample Output images](assets/images/Parent_Education_vs_Average_Performance.png)
 
 -- Final Result Count by Grade Level
-SELECT grade_level,
-       final_result,
-       COUNT(*) AS student_count
-FROM view_students_performance
-GROUP BY grade_level, final_result
-ORDER BY grade_level, final_result;
 
 ![Sample Output images](assets/images/Final_Result_by_Grade Level.png)
 
 -- Top 10 Students by Average Score
-SELECT student_id, name,
-       ROUND((CAST(math_score AS FLOAT) + CAST(reading_score AS FLOAT) + CAST(writing_score AS FLOAT)) / 3.0, 2) AS average_score
-FROM view_students_performance
-ORDER BY average_score DESC
-OFFSET 0 ROWS FETCH NEXT 10 ROWS ONLY;
 
 ![Sample Output images](assets/images/Top_10_Students_by_Average_Score.png)
 
 -- Attendance Impact on Final Result
-SELECT 
-    CASE 
-        WHEN attendance_rate >= 90 THEN 'Excellent'
-        WHEN attendance_rate >= 75 THEN 'Good'
-        ELSE 'Low'
-    END AS attendance_category,
-    final_result,
-    COUNT(*) AS student_count
-FROM view_students_performance
-GROUP BY 
-    CASE 
-        WHEN attendance_rate >= 90 THEN 'Excellent'
-        WHEN attendance_rate >= 75 THEN 'Good'
-        ELSE 'Low'
-    END,
-    final_result;
 
 ![Sample Output images](assets/images/Attendance_Impact_on_Final_Result.png)
 

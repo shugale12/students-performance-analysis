@@ -76,6 +76,8 @@ DIVIDE(
 ## SQL Analysis
 
 Sample queries included:
+
+
  -- Role count
 
 ![Sample Output images](assets/images/Row_count.png)
